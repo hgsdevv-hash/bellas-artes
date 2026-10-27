@@ -120,12 +120,6 @@ nav .btn{min-height:44px;padding:0 18px;font-size:13px}
 @media(max-width:900px){.hero{padding-top:100px}.hero .wrap{grid-template-columns:1fr}.shot{max-width:520px}.shot .frame{aspect-ratio:4/4.4}}
 @media(max-width:520px){.shot{margin:0 14px 14px 0}.shot::before{inset:14px -14px -14px 14px}.shot figcaption{left:10px;bottom:18px}}
 
-/* marquee */
-.band{background:var(--verde);color:#fff;overflow:hidden;border-block:1px solid var(--verde-d)}
-.band div{display:flex;width:max-content;animation:roll 36s linear infinite}
-.band span{font-weight:800;font-stretch:115%;font-size:clamp(22px,2.6vw,34px);letter-spacing:-.01em;padding:18px 0;white-space:nowrap;display:flex;align-items:center}
-.band span::after{content:"";width:.42em;height:.42em;background:var(--mel);margin:0 .9em;transform:rotate(45deg)}
-@keyframes roll{to{transform:translateX(-50%)}}
 
 /* ---------- SECTIONS ---------- */
 section{padding:clamp(76px,10vw,128px) 0}
@@ -355,11 +349,6 @@ dialog[open]{display:grid;place-items:center;animation:dIn .35s var(--ease)}
     </figure>
   </div>
 </header>
-
-<div class="band" aria-hidden="true"><div>
-  <span>Sofás sob medida</span><span>Poltronas</span><span>Estofados de fábrica</span><span>Restauro de móveis</span><span>Modulares</span><span>Sofá-cama</span>
-  <span>Sofás sob medida</span><span>Poltronas</span><span>Estofados de fábrica</span><span>Restauro de móveis</span><span>Modulares</span><span>Sofá-cama</span>
-</div></div>
 
 <section id="sobre">
   <div class="wrap">
