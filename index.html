@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bellas Artes | Móveis e estofados sob medida em Americana</title>
+<meta name="description" content="Sofás, poltronas e estofados sob medida com fábrica própria, além de restauro artesanal de móveis. Showroom na Rua Dom Pedro II, 903, Americana-SP.">
+<meta name="theme-color" content="#1e4436">
+<meta property="og:title" content="Bellas Artes | Móveis sob medida em Americana">
+<meta property="og:description" content="Sofás e poltronas sob medida, fábrica própria e restauro artesanal.">
+<meta property="og:image" content="media/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="media/hero.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FurnitureStore","name":"Bellas Artes","description":"Móveis e estofados sob medida, fábrica própria e restauro de móveis.","telephone":"+55 19 99859-0106","image":"media/hero.jpg","address":{"@type":"PostalAddress","streetAddress":"Rua Dom Pedro II, 903","addressLocality":"Americana","addressRegion":"SP","addressCountry":"BR"},"sameAs":["https://www.instagram.com/bellasarteshome/","https://www.instagram.com/bellasartesestofados/"]}
+</script>
+<style>
+:root{
+  --ink:#191814; --ink2:#24221d; --paper:#f4f1ea; --sand:#e7e0d3; --line:#d6cdbd; --mut:#6d675c;
+  --verde:#1e4436; --verde-d:#143027; --mel:#b9692b; --mel-l:#d98a45;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --pad:clamp(16px,4vw,32px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--paper);color:var(--ink);font:17px/1.6 Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+a{color:inherit;text-decoration:none}
+img,video{display:block;max-width:100%}
+button{font:inherit;color:inherit}
+::selection{background:var(--mel);color:#fff}
+:focus-visible{outline:3px solid var(--mel);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--pad)}
+.h{font-weight:800;font-stretch:112%;line-height:.98;letter-spacing:-.025em;text-wrap:balance}
+.tag{display:inline-block;background:var(--verde);color:#fff;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:6px 12px}
+.tag.mel{background:var(--mel)}
+.tag.lt{background:var(--paper);color:var(--verde)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;font-weight:700;font-size:15px;letter-spacing:.05em;text-transform:uppercase;border:2px solid transparent;cursor:pointer;transition:transform .2s var(--ease),background .2s,color .2s,border-color .2s}
+.btn:active{transform:translateY(2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.vd{background:var(--verde);color:#fff}
+.btn.vd:hover{background:var(--ink)}
+.btn.ml{background:var(--mel);color:#fff}
+.btn.ml:hover{background:var(--ink)}
+.btn.out{border-color:var(--ink);color:var(--ink);background:none}
+.btn.out:hover{background:var(--ink);color:var(--paper)}
+.btn.lt{background:var(--paper);color:var(--verde)}
+.btn.lt:hover{background:var(--mel);color:#fff}
+.btn.ghost{border-color:rgba(255,255,255,.7);color:#fff;background:none}
+.btn.ghost:hover{background:#fff;color:var(--verde)}
+
+/* ---------- INTRO: logo se desenhando ---------- */
+#intro{position:fixed;inset:0;z-index:100;background:var(--verde);display:grid;place-items:center;transition:opacity .9s var(--ease),visibility .9s}
+#intro.out{opacity:0;visibility:hidden}
+#intro svg{width:min(560px,82vw);height:auto;overflow:visible}
+#intro .mk rect,#intro .mk path{fill:none;stroke:#fff;stroke-width:3;stroke-dasharray:var(--l);stroke-dashoffset:var(--l);animation:draw 1.3s var(--ease) forwards}
+#intro .mk path{stroke-width:2.6;animation-delay:.25s}
+#intro .wd{font:800 58px Archivo;font-stretch:118%;letter-spacing:-1px;fill:transparent;stroke:#fff;stroke-width:1.2;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.5s .45s var(--ease) forwards,fillin .6s 1.5s forwards}
+#intro .sb{font:700 13px Archivo;letter-spacing:6px;fill:var(--mel-l);opacity:0;animation:fade .6s 1.7s forwards}
+#intro .glint{position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.22) 50%,transparent 60%);background-size:260% 100%;background-position:130% 0;animation:glint 1.1s 1.9s ease-in-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fillin{to{fill:#fff;stroke-width:0}}
+@keyframes fade{to{opacity:1}}
+@keyframes glint{to{background-position:-40% 0}}
+
+/* ---------- NAV ---------- */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(244,241,234,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+nav.solid{border-color:var(--line)}
+nav .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-stretch:118%;font-size:20px;letter-spacing:-.02em;white-space:nowrap}
+.logo svg{width:34px;height:34px;flex:none}
+.logo small{display:block;font-size:10px;font-weight:700;letter-spacing:.24em;color:var(--mel);font-stretch:100%;margin-top:2px}
+.logo span{line-height:1}
+.nav-links{display:flex;gap:26px;margin-left:auto;font-weight:600;font-size:15px}
+.nav-links a{position:relative;padding:4px 0}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--mel);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav-links a:hover::after{transform:none}
+nav .btn{min-height:44px;padding:0 18px;font-size:13px}
+.burger{display:none;width:46px;height:46px;border:0;background:var(--ink);cursor:pointer;place-items:center}
+.burger i{display:block;width:20px;height:2px;background:#fff;position:relative;transition:transform .3s,background .3s}
+.burger i::before,.burger i::after{content:"";position:absolute;left:0;width:20px;height:2px;background:#fff;transition:transform .3s}
+.burger i::before{top:-6px}.burger i::after{top:6px}
+.menu-open .burger i{background:transparent}
+.menu-open .burger i::before{transform:translateY(6px) rotate(45deg)}
+.menu-open .burger i::after{transform:translateY(-6px) rotate(-45deg)}
+.mmenu{position:fixed;inset:68px 0 0;z-index:49;background:var(--verde);color:#fff;padding:28px var(--pad);display:flex;flex-direction:column;gap:6px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .3s,transform .3s var(--ease),visibility .3s}
+.menu-open .mmenu{opacity:1;transform:none;visibility:visible}
+.mmenu a:not(.btn){font-weight:800;font-stretch:115%;font-size:34px;letter-spacing:-.02em;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+.mmenu .btn{margin-top:24px}
+@media(max-width:940px){.nav-links{display:none}nav .btn.vd{margin-left:auto}.burger{display:grid}}
+@media(max-width:420px){nav .btn.vd{display:none}.burger{margin-left:auto}}
+
+/* ---------- HERO ---------- */
+.hero{padding:118px 0 80px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,6vw,80px);align-items:center}
+.hero h1{font-size:clamp(44px,6.6vw,92px);margin:22px 0 0}
+.hero h1 em{font-style:normal;color:var(--verde);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.14em;background:var(--mel);z-index:-1;opacity:.85}
+.lead{font-size:clamp(17px,1.5vw,19px);color:#4a463e;max-width:32em;margin-top:26px}
+.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
+.pills span{display:flex;align-items:center;gap:8px;border:1px solid var(--line);padding:8px 14px;font-size:14px;font-weight:600;background:#fff}
+.pills span::before{content:"";width:8px;height:8px;background:var(--mel)}
+.shot{position:relative;margin:0 22px 22px 0}
+.shot::before{content:"";position:absolute;inset:22px -22px -22px 22px;background:var(--verde)}
+.shot .frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--sand)}
+.shot video,.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shot figcaption{position:absolute;left:-22px;bottom:32px;max-width:80%;background:var(--paper);padding:14px 18px;font-size:14px;line-height:1.45;border-left:4px solid var(--mel);box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.shot figcaption b{display:block;font-weight:800;font-stretch:112%;font-size:16px}
+.shot .sound{position:absolute;right:12px;top:12px;width:42px;height:42px;display:grid;place-items:center;background:rgba(25,24,20,.6);border:0;color:#fff;cursor:pointer}
+.shot .sound svg{width:20px;height:20px}
+@media(max-width:900px){.hero{padding-top:100px}.hero .wrap{grid-template-columns:1fr}.shot{max-width:520px}.shot .frame{aspect-ratio:4/4.4}}
+@media(max-width:520px){.shot{margin:0 14px 14px 0}.shot::before{inset:14px -14px -14px 14px}.shot figcaption{left:10px;bottom:18px}}
+
+/* marquee */
+.band{background:var(--verde);color:#fff;overflow:hidden;border-block:1px solid var(--verde-d)}
+.band div{display:flex;width:max-content;animation:roll 36s linear infinite}
+.band span{font-weight:800;font-stretch:115%;font-size:clamp(22px,2.6vw,34px);letter-spacing:-.01em;padding:18px 0;white-space:nowrap;display:flex;align-items:center}
+.band span::after{content:"";width:.42em;height:.42em;background:var(--mel);margin:0 .9em;transform:rotate(45deg)}
+@keyframes roll{to{transform:translateX(-50%)}}
+
+/* ---------- SECTIONS ---------- */
+section{padding:clamp(76px,10vw,128px) 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap;margin-bottom:48px}
+.sh>div{max-width:720px}
+.sh h2{font-size:clamp(36px,5.2vw,68px);margin-top:18px}
+.sh p{color:var(--mut);margin-top:18px;max-width:34em}
+
+/* pillars */
+.pil{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pil article{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;min-width:0}
+.pil figure{aspect-ratio:4/3;overflow:hidden;background:var(--sand)}
+.pil img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;transition:transform 1.2s var(--ease)}
+.pil article:hover img{transform:scale(1.05)}
+.pil .tx{padding:26px 24px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pil .n{font-weight:800;font-size:13px;letter-spacing:.16em;color:var(--mel)}
+.pil h3{font-weight:800;font-stretch:112%;font-size:clamp(23px,2.2vw,28px);line-height:1.05;letter-spacing:-.02em}
+.pil p{color:var(--mut);font-size:15.5px}
+.pil .lk{margin-top:auto;padding-top:10px;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--verde);display:inline-flex;gap:8px;align-items:center}
+.pil .lk::after{content:"→";transition:transform .25s var(--ease)}
+.pil article:hover .lk::after{transform:translateX(4px)}
+@media(max-width:900px){.pil{grid-template-columns:1fr 1fr}.pil article:last-child{grid-column:1/-1}.pil article:last-child figure{aspect-ratio:16/8}}
+@media(max-width:600px){.pil{grid-template-columns:1fr}.pil article:last-child figure{aspect-ratio:4/3}}
+
+/* collection */
+.col{background:var(--sand)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips button{min-height:44px;padding:0 18px;border:2px solid var(--ink);background:none;font-weight:700;font-size:14px;letter-spacing:.04em;cursor:pointer;transition:background .2s,color .2s}
+.chips button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.chips button:hover:not([aria-pressed=true]){background:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{position:relative;background:#fff;cursor:pointer;min-width:0;text-align:left;border:0;display:flex;flex-direction:column;transition:transform .4s var(--ease),box-shadow .4s}
+.card:hover{transform:translateY(-4px);box-shadow:0 22px 40px -18px rgba(25,24,20,.35)}
+.card[hidden]{display:none}
+.card .m{position:relative;aspect-ratio:4/5;overflow:hidden;background:#d9d1c2}
+.card .m img,.card .m video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.card .m video{opacity:0;transition:opacity .5s}
+.card.play .m video{opacity:1}
+.card .m .tag{position:absolute;left:0;top:16px}
+.card .pl{position:absolute;right:14px;bottom:14px;width:48px;height:48px;background:var(--paper);display:grid;place-items:center;transition:background .2s,color .2s}
+.card:hover .pl{background:var(--mel);color:#fff}
+.card .pl svg{width:18px;height:18px;margin-left:2px}
+.card .b{padding:20px 22px 24px}
+.card h3{font-weight:800;font-stretch:112%;font-size:24px;letter-spacing:-.02em;line-height:1.05}
+.card p{color:var(--mut);font-size:15px;margin-top:8px}
+.card ul{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;list-style:none}
+.card li{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--paper);padding:5px 9px}
+@media(max-width:960px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.card .m{aspect-ratio:4/4.3}}
+
+/* configurator */
+.cfg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:start}
+.opt{margin-bottom:28px}
+.opt>b{display:flex;align-items:center;gap:10px;font-weight:800;font-size:14px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+.opt>b i{font-style:normal;display:grid;place-items:center;width:26px;height:26px;background:var(--ink);color:#fff;font-size:12px;letter-spacing:0}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{min-height:46px;padding:0 16px;border:2px solid var(--line);background:#fff;font-weight:700;font-size:15px;cursor:pointer;transition:border-color .2s,background .2s,color .2s}
+.seg button:hover{border-color:var(--ink)}
+.seg button[aria-pressed=true]{border-color:var(--verde);background:var(--verde);color:#fff}
+.sw{display:flex;flex-wrap:wrap;gap:10px}
+.sw button{width:48px;height:48px;border:2px solid var(--line);background:var(--c);cursor:pointer;position:relative;transition:transform .2s var(--ease)}
+.sw button:hover{transform:translateY(-2px)}
+.sw button[aria-pressed=true]{outline:3px solid var(--ink);outline-offset:3px}
+.sw-name{margin-top:10px;font-size:14px;color:var(--mut)}
+.sw-name b{color:var(--ink)}
+.fld{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fld label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
+.fld input,.fld select{min-height:48px;border:2px solid var(--line);background:#fff;padding:0 14px;font:500 16px Archivo;color:var(--ink);border-radius:0;width:100%}
+.fld input:focus,.fld select:focus{border-color:var(--verde);outline:none}
+.preview{position:sticky;top:92px;background:var(--verde);color:#fff;padding:clamp(22px,3vw,36px)}
+.stage{background:#f1ece2;aspect-ratio:16/10;display:grid;place-items:center;position:relative;overflow:hidden}
+.stage::after{content:"";position:absolute;left:0;right:0;bottom:0;height:24%;background:#e2d9c9}
+.stage svg{position:relative;z-index:1;width:86%;height:auto;margin-top:6%}
+.stage .fab{stroke:rgba(0,0,0,.16);stroke-width:1.5}
+.stage svg *{transition:fill .45s var(--ease),opacity .4s,transform .5s var(--ease)}
+.sum{margin-top:22px;display:grid;gap:0}
+.sum div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:15px}
+.sum span{color:rgba(255,255,255,.7)}
+.sum b{text-align:right}
+.preview .btn{width:100%;margin-top:22px}
+.preview small{display:block;margin-top:12px;font-size:13px;color:rgba(255,255,255,.7)}
+@media(max-width:900px){.cfg{grid-template-columns:1fr}.preview{position:static}}
+@media(max-width:420px){.fld{grid-template-columns:1fr}}
+
+/* restoration */
+.rest{background:var(--ink);color:var(--paper)}
+.rest .sh p{color:#a8a296}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.step{background:var(--ink2);cursor:pointer;border:0;text-align:left;color:inherit;min-width:0;display:flex;flex-direction:column}
+.step .m{position:relative;aspect-ratio:4/5;overflow:hidden}
+.step img{width:100%;height:100%;object-fit:cover;object-position:50% 8%;transition:transform 1.2s var(--ease),filter .5s}
+.step:hover img{transform:scale(1.05)}
+.step .m::after{counter-increment:s;content:"0" counter(s);position:absolute;left:0;bottom:0;background:var(--mel);color:#fff;font-weight:800;font-stretch:115%;font-size:22px;padding:8px 14px}
+.step .pl{position:absolute;right:12px;top:12px;width:44px;height:44px;background:rgba(244,241,234,.92);color:var(--ink);display:grid;place-items:center}
+.step .pl svg{width:16px;height:16px;margin-left:2px}
+.step .b{padding:20px 20px 24px}
+.step h3{font-weight:800;font-stretch:112%;font-size:21px;line-height:1.1;letter-spacing:-.01em}
+.step p{color:#a8a296;font-size:15px;margin-top:8px}
+.quote{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;margin-top:48px;border-top:1px solid #38352d;padding-top:40px}
+.quote blockquote{font-weight:700;font-stretch:110%;font-size:clamp(22px,2.6vw,32px);line-height:1.2;letter-spacing:-.01em}
+.quote .tag{align-self:start}
+@media(max-width:980px){.steps{grid-template-columns:1fr 1fr}.quote{grid-template-columns:1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr 1fr;gap:10px}.step .b{padding:14px 14px 18px}.step h3{font-size:17px}.step p{font-size:14px}.step .m::after{font-size:16px;padding:6px 10px}}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.visit figure{position:relative;min-height:460px;overflow:hidden;background:var(--sand)}
+.visit figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.visit figcaption{position:absolute;left:0;bottom:0;right:0;padding:80px 28px 26px;background:linear-gradient(transparent,rgba(20,19,16,.82));color:#fff}
+.visit figcaption b{display:block;font-weight:800;font-stretch:112%;font-size:clamp(24px,2.6vw,32px);letter-spacing:-.02em;line-height:1.05}
+.info{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+.info .row{display:grid;grid-template-columns:48px 1fr;gap:16px;padding:22px 24px;border-bottom:1px solid var(--line);align-items:start}
+.info .ic{width:48px;height:48px;background:var(--verde);color:#fff;display:grid;place-items:center}
+.info .ic svg{width:22px;height:22px}
+.info small{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.info b{font-weight:700;font-size:17px;line-height:1.35;display:block;margin-top:2px}
+.info a b:hover{color:var(--mel)}
+.map{flex:1;min-height:240px;border:0;width:100%;filter:grayscale(.35) contrast(1.05)}
+@media(max-width:900px){.visit{grid-template-columns:1fr}.visit figure{min-height:0;aspect-ratio:4/3.4}}
+
+/* instagram */
+.ig{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.ig a{display:flex;align-items:center;gap:18px;padding:22px 24px;border:2px solid var(--ink);transition:background .25s,color .25s;min-width:0}
+.ig a:hover{background:var(--ink);color:var(--paper)}
+.ig svg{width:34px;height:34px;flex:none}
+.ig b{display:block;font-weight:800;font-stretch:110%;font-size:20px;overflow-wrap:anywhere}
+.ig span{font-size:14px;color:var(--mut)}
+.ig a:hover span{color:#bdb6a8}
+@media(max-width:700px){.ig{grid-template-columns:1fr}}
+
+/* final call */
+.call{background:var(--verde);color:#fff;padding:clamp(90px,12vw,150px) 0;position:relative;overflow:hidden;isolation:isolate}
+.call::before{content:"";position:absolute;right:-8%;top:-30%;width:46%;aspect-ratio:1;border:2px solid rgba(255,255,255,.1);z-index:-1}
+.call::after{content:"";position:absolute;right:4%;top:-10%;width:30%;aspect-ratio:1;background:var(--verde-d);z-index:-1}
+.call h2{font-size:clamp(40px,8vw,112px);max-width:11em}
+.call p{font-size:19px;color:#cfe0d8;margin:24px 0 36px;max-width:30em}
+.call .acts{margin-top:0}
+.call .alt{margin-top:22px;font-size:15px;color:#cfe0d8}
+.call .alt a{color:#fff;font-weight:700;border-bottom:2px solid var(--mel)}
+
+footer{background:var(--ink);color:#a8a296;padding:48px 0 110px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:start}
+footer .logo{color:var(--paper)}
+footer nav,footer .fl{position:static;background:none;backdrop-filter:none;border:0;display:flex;flex-direction:column;gap:6px}
+footer a:hover{color:var(--paper)}
+footer .sig a{color:var(--paper);font-weight:700;border-bottom:1px solid var(--mel)}
+
+.wa{position:fixed;right:18px;bottom:18px;z-index:40;width:60px;height:60px;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.25);transition:transform .2s var(--ease)}
+.wa:hover{transform:scale(1.07)}
+.wa svg{width:30px;height:30px;fill:#fff}
+
+/* modal */
+dialog{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;color:var(--ink)}
+dialog::backdrop{background:rgba(15,14,12,.82);backdrop-filter:blur(4px)}
+dialog[open]{display:grid;place-items:center;animation:dIn .35s var(--ease)}
+@keyframes dIn{from{opacity:0;transform:translateY(16px)}}
+.dlg{display:grid;grid-template-columns:auto minmax(0,380px);background:var(--paper);max-height:calc(100dvh - 32px);width:min(860px,calc(100vw - 32px));position:relative}
+.dlg video{height:min(78dvh,680px);aspect-ratio:9/16;object-fit:cover;background:#000}
+.dlg .b{padding:34px 30px;display:flex;flex-direction:column;gap:14px;overflow:auto}
+.dlg h3{font-size:clamp(28px,3vw,38px)}
+.dlg p{color:var(--mut)}
+.dlg ul{list-style:none;display:grid;gap:8px}
+.dlg li{display:flex;gap:10px;font-size:15px;font-weight:600}
+.dlg li::before{content:"";flex:none;width:8px;height:8px;margin-top:8px;background:var(--mel)}
+.dlg .btn{margin-top:auto}
+.x{position:absolute;right:10px;top:10px;width:44px;height:44px;border:0;background:var(--ink);color:#fff;cursor:pointer;font-size:24px;line-height:1;z-index:2}
+.x:hover{background:var(--mel)}
+@media(max-width:760px){.dlg{grid-template-columns:1fr;overflow:auto;width:calc(100vw - 24px)}.dlg video{height:auto;width:100%;max-height:60dvh;aspect-ratio:9/12}.dlg .b{padding:22px 20px 24px}}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}.rv{opacity:1;transform:none}#intro{display:none}}
+</style>
+</head>
+<body class="lock">
+
+<div id="intro" aria-hidden="true">
+  <svg viewBox="0 0 560 120">
+    <g class="mk">
+      <rect x="2" y="12" width="96" height="96" style="--l:384"/>
+      <path d="M24 92V28h22c12 0 18 6 18 15 0 7-4 11-10 13 8 1 12 6 12 14 0 11-8 22-20 22zM40 56h6M44 92l21-64 21 64M54 72h22" style="--l:420"/>
+    </g>
+    <text class="wd" x="122" y="78">Bellas Artes</text>
+    <text class="sb" x="124" y="106">MÓVEIS · ESTOFADOS · RESTAURO</text>
+  </svg>
+  <div class="glint"></div>
+</div>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#" class="logo" aria-label="Bellas Artes, início">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#1e4436"/><path d="M8 27V8h7c4 0 6 2 6 4.6 0 2.2-1.3 3.4-3 3.9 2.4.3 3.6 1.9 3.6 4.2 0 3.3-2.4 6.3-6 6.3zM13 17h2M14 27l6.5-19L27 27M17 21h7" fill="none" stroke="#fff" stroke-width="2"/></svg>
+      <span>Bellas Artes<small>HOME · ESTOFADOS</small></span>
+    </a>
+    <div class="nav-links"><a href="#colecao">Coleção</a><a href="#monte">Monte o seu</a><a href="#restauro">Restauro</a><a href="#visite">Showroom</a></div>
+    <a class="btn vd" href="https://wa.me/5519998590106?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Orçamento</a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mmenu"><i></i></button>
+  </div>
+</nav>
+<div class="mmenu" id="mmenu">
+  <a href="#colecao">Coleção</a><a href="#monte">Monte o seu</a><a href="#restauro">Restauro</a><a href="#visite">Showroom</a>
+  <a class="btn lt" href="https://wa.me/5519998590106?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento no WhatsApp</a>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag rv">Americana · SP</span>
+      <h1 class="h rv d1">Móveis sob medida com a <em>sua cara</em>.</h1>
+      <p class="lead rv d2">Sofás, poltronas e estofados feitos na <strong>nossa própria fábrica</strong>, no tecido, na cor e na medida do seu ambiente. E quando a peça tem história, a gente restaura.</p>
+      <div class="acts rv d3">
+        <a class="btn vd" href="#monte">Montar meu sofá</a>
+        <a class="btn out" href="#colecao">Ver coleção</a>
+      </div>
+      <div class="pills rv d3"><span>Fábrica própria</span><span>Espuma D33 Soft</span><span>Tecido e cor à escolha</span><span>Restauro artesanal</span></div>
+    </div>
+    <figure class="shot rv d2">
+      <div class="frame">
+        <img src="media/hero.jpg" alt="Sofá cinza claro com detalhe em couro caramelo e almofadas verdes no showroom">
+        <video id="heroVid" src="media/hero-loop.mp4" poster="media/hero.jpg" muted loop playsinline autoplay preload="metadata"></video>
+      </div>
+      <figcaption><b>Stella Living</b>Tecido claro com faixa em couro e mesa lateral em madeira.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<div class="band" aria-hidden="true"><div>
+  <span>Sofás sob medida</span><span>Poltronas</span><span>Estofados de fábrica</span><span>Restauro de móveis</span><span>Modulares</span><span>Sofá-cama</span>
+  <span>Sofás sob medida</span><span>Poltronas</span><span>Estofados de fábrica</span><span>Restauro de móveis</span><span>Modulares</span><span>Sofá-cama</span>
+</div></div>
+
+<section id="sobre">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <span class="tag mel rv">Uma casa, três ofícios</span>
+        <h2 class="h rv d1">Da fábrica direto para a sua sala.</h2>
+      </div>
+      <p class="rv d2">A Bellas Artes une showroom, fábrica de estofados e oficina de restauro. Você vê, senta, escolhe e acompanha a peça sendo feita.</p>
+    </div>
+    <div class="pil">
+      <article class="rv">
+        <figure><img src="media/stella-couro.jpg" alt="Braço de sofá verde com acabamento em couro caramelo" loading="lazy"></figure>
+        <div class="tx"><span class="n">01 · SOB MEDIDA</span><h3>Do tamanho do seu espaço</h3><p>Medida, profundidade, tecido, cor e acabamento em couro definidos junto com você, para o seu projeto.</p><a class="lk" href="#monte">Montar o meu</a></div>
+      </article>
+      <article class="rv d1">
+        <figure><img src="media/detalhe.jpg" alt="Almofadas verdes de tricô sobre sofá claro com faixa em couro" loading="lazy"></figure>
+        <div class="tx"><span class="n">02 · ESTOFADOS</span><h3>Feitos na nossa fábrica</h3><p>Espuma D33 Soft, fibra no encosto e estrutura pensada para durar. Conforto que se sente no primeiro contato.</p><a class="lk" href="#colecao">Ver modelos</a></div>
+      </article>
+      <article class="rv d2">
+        <figure><img src="media/luisxv.jpg" alt="Poltrona Luís XV em veludo verde e moldura dourada" loading="lazy"></figure>
+        <div class="tx"><span class="n">03 · RESTAURO</span><h3>Nova vida para peças com história</h3><p>Troca de tecido, espuma, tachas e acabamento, preservando o desenho original de cada móvel.</p><a class="lk" href="#restauro">Ver o processo</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="col" id="colecao">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <span class="tag rv">Coleção</span>
+        <h2 class="h rv d1">Modelos que viram o seu.</h2>
+        <p class="rv d2">Toque num modelo para ver o vídeo. Todos podem ser personalizados no tecido, na cor e na medida.</p>
+      </div>
+      <div class="chips rv d2" role="group" aria-label="Filtrar coleção">
+        <button aria-pressed="true" data-f="all">Todos</button><button aria-pressed="false" data-f="sofa">Sofás</button><button aria-pressed="false" data-f="mod">Modulares</button><button aria-pressed="false" data-f="pol">Poltronas</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="monte">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <span class="tag mel rv">Monte o seu</span>
+        <h2 class="h rv d1">Escolha, veja e mande para a gente.</h2>
+        <p class="rv d2">Monte uma ideia do seu estofado aqui. A gente recebe no WhatsApp e volta com medidas, tecidos reais e orçamento.</p>
+      </div>
+    </div>
+    <div class="cfg">
+      <div class="rv">
+        <div class="opt"><b><i>1</i>Modelo</b><div class="seg" id="oModel"></div></div>
+        <div class="opt"><b><i>2</i>Cor do tecido</b><div class="sw" id="oColor"></div><p class="sw-name">Selecionado: <b id="colorName"></b></p></div>
+        <div class="opt"><b><i>3</i>Detalhe em couro</b><div class="seg" id="oLeather"></div></div>
+        <div class="opt"><b><i>4</i>Seu espaço</b>
+          <div class="fld">
+            <label>Largura disponível (cm)<input id="oWidth" type="number" inputmode="numeric" min="60" max="600" placeholder="ex.: 240"></label>
+            <label>Ambiente<select id="oRoom"><option>Sala de estar</option><option>Home theater</option><option>Quarto</option><option>Escritório</option><option>Recepção / consultório</option></select></label>
+          </div>
+        </div>
+      </div>
+      <aside class="preview rv d1" aria-live="polite">
+        <div class="stage">
+          <svg id="sofa" viewBox="0 0 400 190" role="img" aria-label="Prévia do estofado">
+            <ellipse cx="200" cy="178" rx="180" ry="8" fill="rgba(0,0,0,.12)"/>
+            <g id="gSofa">
+              <rect class="fab-d" x="40" y="26" width="320" height="86" rx="10"/>
+              <rect class="fab" x="58" y="34" width="140" height="72" rx="12"/>
+              <rect class="fab" x="202" y="34" width="140" height="72" rx="12"/>
+              <rect class="fab-d" x="34" y="104" width="332" height="56" rx="6"/>
+              <rect class="fab seat" x="60" y="94" width="139" height="34" rx="8"/>
+              <rect class="fab seat" x="201" y="94" width="139" height="34" rx="8"/>
+              <rect class="arm" x="18" y="66" width="44" height="96" rx="14"/>
+              <rect class="arm" x="338" y="66" width="44" height="96" rx="14"/>
+              <rect class="wood" x="52" y="160" width="10" height="14"/><rect class="wood" x="338" y="160" width="10" height="14"/>
+            </g>
+            <g id="gChair" opacity="0">
+              <path class="fab-d" d="M132 40c0-18 18-28 68-28s68 10 68 28v78H132z"/>
+              <rect class="fab" x="148" y="40" width="104" height="68" rx="18"/>
+              <rect class="fab-d" x="128" y="108" width="144" height="50" rx="10"/>
+              <rect class="fab seat" x="146" y="98" width="108" height="30" rx="10"/>
+              <rect class="arm" x="112" y="72" width="38" height="90" rx="18"/>
+              <rect class="arm" x="250" y="72" width="38" height="90" rx="18"/>
+              <rect class="wood" x="140" y="158" width="9" height="16"/><rect class="wood" x="251" y="158" width="9" height="16"/>
+            </g>
+          </svg>
+        </div>
+        <div class="sum">
+          <div><span>Modelo</span><b id="sModel"></b></div>
+          <div><span>Tecido</span><b id="sColor"></b></div>
+          <div><span>Couro</span><b id="sLeather"></b></div>
+          <div><span>Espaço</span><b id="sSpace"></b></div>
+        </div>
+        <a class="btn ml" id="send" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .3-3.4-.7a11.6 11.6 0 0 1-4.5-4c-.3-.5-1-1.6-1-3s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>Enviar meu projeto</a>
+        <small>Cores ilustrativas. Na loja você vê e toca os tecidos reais.</small>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="rest" id="restauro">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <span class="tag mel rv">Restauro</span>
+        <h2 class="h rv d1">Transformar sem apagar a história.</h2>
+      </div>
+      <p class="rv d2">Cada peça é avaliada uma a uma para definir materiais, cores e acabamentos que valorizem o desenho original. Acompanhe as etapas de um restauro de verdade.</p>
+    </div>
+    <div class="steps" id="steps"></div>
+    <div class="quote rv">
+      <span class="tag lt">Bellas Artes</span>
+      <blockquote>“Restaurar também é saber valorizar aquilo que o tempo não conseguiu apagar.”</blockquote>
+      <a class="btn ml" href="https://wa.me/5519998590106?text=Ol%C3%A1!%20Tenho%20um%20m%C3%B3vel%20para%20restaurar.%20Posso%20mandar%20fotos%3F" target="_blank" rel="noopener">Mandar fotos da peça</a>
+    </div>
+  </div>
+</section>
+
+<section id="visite">
+  <div class="wrap">
+    <div class="sh">
+      <div>
+        <span class="tag rv">Showroom</span>
+        <h2 class="h rv d1">Venha sentar antes de escolher.</h2>
+      </div>
+      <p class="rv d2">Sofá se escolhe com o corpo. No showroom você testa o conforto, compara tecidos e conversa com quem fabrica.</p>
+    </div>
+    <div class="visit">
+      <figure class="rv">
+        <img src="media/showroom.jpg" alt="Showroom da Bellas Artes com sofá em L claro, almofadas laranja e poltrona verde" loading="lazy">
+        <figcaption><b>Rua Dom Pedro II, 903</b>Americana · SP</figcaption>
+      </figure>
+      <div class="info rv d1">
+        <div class="row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><a href="https://www.google.com/maps/search/?api=1&query=Rua+Dom+Pedro+II%2C+903%2C+Americana+SP" target="_blank" rel="noopener"><small>Endereço</small><b>Rua Dom Pedro II, 903<br>Americana · SP</b></a></div>
+        <div class="row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg></span><a href="https://wa.me/5519998590106" target="_blank" rel="noopener"><small>Loja · WhatsApp</small><b>(19) 99859-0106</b></a></div>
+        <div class="row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V9l6 4V9l6 4V5h6v16z"/></svg></span><a href="https://wa.me/5519999220260" target="_blank" rel="noopener"><small>Fábrica de estofados</small><b>(19) 99922-0260</b></a></div>
+        <iframe class="map" title="Mapa do showroom Bellas Artes" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Rua%20Dom%20Pedro%20II%2C%20903%2C%20Americana%20SP&z=16&output=embed"></iframe>
+      </div>
+    </div>
+    <div class="ig">
+      <a class="rv" href="https://www.instagram.com/bellasarteshome/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><div><b>@bellasarteshome</b><span>Loja, ambientes e restauros</span></div></a>
+      <a class="rv d1" href="https://www.instagram.com/bellasartesestofados/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><div><b>@bellasartesestofados</b><span>Fábrica, lançamentos e bastidores</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="call">
+  <div class="wrap">
+    <span class="tag lt rv">Vamos conversar</span>
+    <h2 class="h rv d1">O próximo sofá da sua casa começa aqui.</h2>
+    <p class="rv d2">Mande a medida do espaço, uma foto do ambiente ou a peça que quer restaurar. A gente responde com ideias e orçamento.</p>
+    <div class="acts rv d3">
+      <a class="btn lt" href="https://wa.me/5519998590106?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">Falar com a loja</a>
+      <a class="btn ghost" href="https://wa.me/5519999220260?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20sobre%20os%20estofados." target="_blank" rel="noopener">Falar com a fábrica</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a href="#" class="logo"><svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" fill="#b9692b"/><path d="M8 27V8h7c4 0 6 2 6 4.6 0 2.2-1.3 3.4-3 3.9 2.4.3 3.6 1.9 3.6 4.2 0 3.3-2.4 6.3-6 6.3zM13 17h2M14 27l6.5-19L27 27M17 21h7" fill="none" stroke="#fff" stroke-width="2"/></svg><span>Bellas Artes<small>HOME · ESTOFADOS</small></span></a>
+      <p style="margin-top:16px">Rua Dom Pedro II, 903 · Americana · SP</p>
+    </div>
+    <div class="fl"><a href="#colecao">Coleção</a><a href="#monte">Monte o seu</a><a href="#restauro">Restauro</a><a href="#visite">Showroom</a></div>
+    <div class="fl"><a href="https://www.instagram.com/bellasarteshome/" target="_blank" rel="noopener">Instagram · Home</a><a href="https://www.instagram.com/bellasartesestofados/" target="_blank" rel="noopener">Instagram · Estofados</a><a href="https://wa.me/5519998590106" target="_blank" rel="noopener">WhatsApp</a></div>
+    <div class="fl"><span>© <span id="yr"></span> Bellas Artes</span><span class="sig">Site por <a href="https://www.hgsdev.com.br" target="_blank" rel="noopener">HGS Dev</a></span></div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5519998590106?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .3-3.4-.7a11.6 11.6 0 0 1-4.5-4c-.3-.5-1-1.6-1-3s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+
+<dialog id="dlg" aria-labelledby="dT">
+  <div class="dlg">
+    <button class="x" id="dX" aria-label="Fechar">×</button>
+    <video id="dV" controls playsinline preload="none"></video>
+    <div class="b">
+      <span class="tag" id="dTag"></span>
+      <h3 class="h" id="dT"></h3>
+      <p id="dP"></p>
+      <ul id="dL"></ul>
+      <a class="btn vd" id="dW" target="_blank" rel="noopener">Quero este modelo</a>
+    </div>
+  </div>
+</dialog>
+
+<script>
+const WA='5519998590106';
+const wa=t=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+const play='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg>';
+
+/* ---------- intro ---------- */
+(function(){
+  const intro=document.getElementById('intro');let seen=false;
+  try{seen=!!sessionStorage.getItem('ba-intro')}catch(e){}
+  const done=()=>{intro.classList.add('out');document.body.classList.remove('lock');try{sessionStorage.setItem('ba-intro','1')}catch(e){}setTimeout(()=>intro.remove(),1000)};
+  if(seen||matchMedia('(prefers-reduced-motion: reduce)').matches){intro.remove();document.body.classList.remove('lock');return}
+  setTimeout(done,3000);intro.addEventListener('click',done);
+})();
+
+/* ---------- nav ---------- */
+const nav=document.getElementById('nav'),burger=document.getElementById('burger');
+addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>20),{passive:true});
+const setMenu=o=>{document.body.classList.toggle('menu-open',o);burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Fechar menu':'Abrir menu')};
+burger.onclick=()=>setMenu(!document.body.classList.contains('menu-open'));
+document.querySelectorAll('.mmenu a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+
+/* ---------- collection ---------- */
+const items=[
+  {id:'living',f:'sofa',tag:'Mais procurado',name:'Stella Living',txt:'Encosto mais baixo e couro na parte de trás: feito para ambientes integrados, onde o sofá aparece de todos os lados.',spec:['Estrutura living','Couro na traseira','Personalizável'],long:'O Stella foi pensado para ir além da sala de cinema. Com encosto mais baixo e acabamento em couro na parte traseira, valoriza ambientes integrados.'},
+  {id:'stella-verde',f:'sofa',tag:'Verde menta',name:'Stella Verde Menta',txt:'Couro contornando toda a parte externa. Um detalhe que muda a percepção da peça inteira.',spec:['Contorno em couro','Espuma D33 Soft','Cor à escolha'],long:'Uma nova leitura do Stella em verde menta, com couro contornando toda a parte externa do modelo living. Você escolhe a cor e os acabamentos.'},
+  {id:'stella-cama',f:'sofa',tag:'Novidade',name:'Stella Sofá-cama',txt:'Linhas orgânicas, peças que se encaixam e uma cama quando a visita chega.',spec:['Vira cama','Acabamento em couro','Linhas orgânicas'],long:'A novidade da fábrica: ergonomia, funcionalidade e linhas orgânicas. As peças se encaixam de forma fluida e acompanham diferentes momentos do ambiente.'},
+  {id:'kim',f:'mod',tag:'Modular',name:'Kim',txt:'Reorganize as peças, mude a composição e transforme um pufe em mesa de centro.',spec:['Modular','Pufe vira mesa','Sala ou recepção'],long:'O Kim acompanha as mudanças do seu ambiente. Modular e versátil, funciona na sala de estar e também em recepções de consultórios. Em tom escuro, ajuda a disfarçar as marcas do dia a dia.'},
+  {id:'kai',f:'sofa',tag:'Aconchego',name:'Kai',txt:'Assento profundo e almofadas fartas para quem gosta de afundar no sofá.',spec:['Assento profundo','Almofadas soltas','Personalizável'],long:'O Kai reúne conforto e praticidade num só desenho, feito para deixar o ambiente mais aconchegante.'},
+  {id:'lucia',f:'pol',tag:'Poltrona',name:'Poltrona Lúcia',txt:'Acompanha a penteadeira, a escrivaninha ou o canto de leitura.',spec:['Formas arredondadas','Tecido à escolha','Quarto ou escritório'],long:'A Lúcia se adapta ao ambiente e à rotina: penteadeira, escrivaninha ou escritório. Você escolhe o tecido e a cor.'},
+];
+const grid=document.getElementById('grid');
+grid.innerHTML=items.map((it,i)=>`<button class="card rv${i%3?' d'+(i%3):''}" data-f="${it.f}" data-i="${i}" aria-label="Ver vídeo: ${it.name}">
+  <div class="m"><img src="media/${it.id}.jpg" alt="" loading="lazy"><video src="media/${it.id}.mp4" muted loop playsinline preload="none"></video><span class="tag mel">${it.tag}</span><span class="pl">${play}</span></div>
+  <div class="b"><h3>${it.name}</h3><p>${it.txt}</p><ul>${it.spec.map(s=>`<li>${s}</li>`).join('')}</ul></div></button>`).join('');
+
+document.querySelectorAll('.chips button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.chips button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  grid.querySelectorAll('.card').forEach(c=>c.hidden=!(b.dataset.f==='all'||c.dataset.f===b.dataset.f));
+});
+
+// preview videos: hover on desktop, in-view on touch
+const fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+const startV=c=>{const v=c.querySelector('video');v.play().then(()=>c.classList.add('play')).catch(()=>{})};
+const stopV=c=>{const v=c.querySelector('video');v.pause();c.classList.remove('play')};
+if(fine){grid.querySelectorAll('.card').forEach(c=>{c.onmouseenter=()=>startV(c);c.onmouseleave=()=>stopV(c)})}
+else if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?startV(e.target):stopV(e.target)),{threshold:.75});
+  grid.querySelectorAll('.card').forEach(c=>io.observe(c));
+}
+
+/* ---------- restoration steps ---------- */
+const steps=[
+  {id:'luisxv',t:'Avaliação da peça',p:'Cada poltrona é analisada para definir materiais, cor e acabamento.',long:'A poltrona Luís XV entra em restauro: cada detalhe é trabalhado para preservar as características originais e devolver a beleza que a peça merece.',spec:['Análise da estrutura','Escolha de tecido e cor','Orçamento antes de começar']},
+  {id:'retirada',t:'Retirada do tecido',p:'Camada por camada, grampo por grampo, sem ferir a estrutura.',long:'Uma das etapas que exige mais precisão: a retirada do tecido original. Tudo é removido com cuidado para que a nova composição fique nivelada e bem encaixada.',spec:['Remoção cuidadosa','Estrutura preservada','Base pronta para o novo']},
+  {id:'mel',t:'Novo revestimento',p:'Tecido novo, como o tom de mel, para dar personalidade ao desenho original.',long:'Duas poltronas prontas para ganhar uma nova história, com revestimento em tom de mel que destaca o desenho original.',spec:['Tecidos e couros','Espuma nova','Tachas e acabamentos']},
+  {id:'restauro-final',t:'De volta para casa',p:'Peça pronta, com nova leitura e a mesma história.',long:'Cadeiras restauradas, com tecidos novos e acabamento em tachas, ganhando uma estética mais rústica sem perder o desenho original.',spec:['Acabamento conferido','Entrega combinada','Pronta para mais décadas']},
+];
+document.getElementById('steps').innerHTML=steps.map((s,i)=>`<button class="step rv${i?' d'+Math.min(i,3):''}" data-i="${i}" aria-label="Ver vídeo: ${s.t}"><div class="m"><img src="media/${s.id}.jpg" alt="" loading="lazy"><span class="pl">${play}</span></div><div class="b"><h3>${s.t}</h3><p>${s.p}</p></div></button>`).join('');
+
+/* ---------- modal ---------- */
+const dlg=document.getElementById('dlg'),dV=document.getElementById('dV');
+const open=(o,tag,msg)=>{
+  dV.src=`media/${o.id}.mp4`;dV.poster=`media/${o.id}.jpg`;
+  document.getElementById('dTag').textContent=tag;
+  document.getElementById('dT').textContent=o.name||o.t;
+  document.getElementById('dP').textContent=o.long;
+  document.getElementById('dL').innerHTML=(o.spec||[]).map(s=>`<li>${s}</li>`).join('');
+  const w=document.getElementById('dW');w.href=wa(msg);w.textContent=o.name?'Quero este modelo':'Orçar um restauro';
+  dlg.showModal();document.body.classList.add('lock');dV.play().catch(()=>{});
+};
+const close=()=>{dV.pause();dV.removeAttribute('src');dV.load();dlg.close()};
+dlg.addEventListener('close',()=>{document.body.classList.remove('lock');dV.pause()});
+document.getElementById('dX').onclick=close;
+dlg.addEventListener('click',e=>{if(e.target===dlg)close()});
+grid.addEventListener('click',e=>{const c=e.target.closest('.card');if(!c)return;const it=items[c.dataset.i];stopV(c);open(it,it.tag,`Olá! Vi o ${it.name} no site e quero um orçamento.`)});
+document.getElementById('steps').addEventListener('click',e=>{const c=e.target.closest('.step');if(!c)return;open(steps[c.dataset.i],'Restauro · etapa 0'+(+c.dataset.i+1),'Olá! Tenho um móvel para restaurar. Posso mandar fotos?')});
+
+/* ---------- configurator ---------- */
+const models=[{n:'Stella',t:'sofa'},{n:'Kim (modular)',t:'sofa'},{n:'Kai',t:'sofa'},{n:'Poltrona Lúcia',t:'chair'},{n:'Outro / sob medida',t:'sofa'}];
+const colors=[['Areia','#cdbba0'],['Cinza claro','#c9c6bf'],['Verde menta','#a9b9a0'],['Verde musgo','#3f5a46'],['Grafite','#4a4d52'],['Terracota','#b35f3a'],['Café','#5b4031'],['Off-white','#ece6da']];
+const leathers=['Sem couro','Nos braços','Contorno completo'];
+const st={m:0,c:0,l:1};
+const mk=(el,list,key,label)=>{el.innerHTML=list.map((x,i)=>`<button aria-pressed="${i===st[key]}" ${label?`style="--c:${x[1]}" aria-label="${x[0]}" title="${x[0]}"`:''}>${label?'':x.n||x}</button>`).join('');
+  [...el.children].forEach((b,i)=>b.onclick=()=>{st[key]=i;[...el.children].forEach((x,j)=>x.setAttribute('aria-pressed',i===j));render()})};
+mk(document.getElementById('oModel'),models,'m');
+mk(document.getElementById('oColor'),colors,'c',true);
+mk(document.getElementById('oLeather'),leathers,'l');
+const shade=(h,k)=>'#'+h.slice(1).match(/../g).map(x=>Math.max(0,Math.min(255,Math.round(parseInt(x,16)*k))).toString(16).padStart(2,'0')).join('');
+const svg=document.getElementById('sofa');
+function render(){
+  const m=models[st.m],[cn,cv]=colors[st.c],chair=m.t==='chair';
+  document.getElementById('gSofa').setAttribute('opacity',chair?0:1);
+  document.getElementById('gChair').setAttribute('opacity',chair?1:0);
+  svg.querySelectorAll('.fab').forEach(e=>e.style.fill=e.classList.contains('seat')?shade(cv,1.07):shade(cv,.96));
+  svg.querySelectorAll('.fab-d').forEach(e=>e.style.fill=shade(cv,.86));
+  svg.querySelectorAll('.arm').forEach(e=>e.style.fill=st.l?'#a75f2b':shade(cv,.93));
+  svg.querySelectorAll('.wood').forEach(e=>e.style.fill='#6b4a2f');
+  svg.querySelectorAll('.fab-d').forEach(e=>{if(st.l===2)e.style.fill='#94531f'});
+  const w=document.getElementById('oWidth').value,room=document.getElementById('oRoom').value;
+  document.getElementById('colorName').textContent=cn;
+  document.getElementById('sModel').textContent=m.n;
+  document.getElementById('sColor').textContent=cn;
+  document.getElementById('sLeather').textContent=leathers[st.l];
+  document.getElementById('sSpace').textContent=(w?w+' cm · ':'')+room;
+  document.getElementById('send').href=wa(`Olá! Montei uma ideia no site da Bellas Artes:\n• Modelo: ${m.n}\n• Tecido: ${cn}\n• Couro: ${leathers[st.l]}\n• Espaço: ${w?w+' cm, ':''}${room}\nPodem me passar um orçamento?`);
+}
+document.getElementById('oWidth').oninput=render;document.getElementById('oRoom').onchange=render;
+render();
+
+/* ---------- hero video sound off by default; pause when off-screen ---------- */
+const hv=document.getElementById('heroVid');
+if('IntersectionObserver' in window)new IntersectionObserver(([e])=>e.isIntersecting?hv.play().catch(()=>{}):hv.pause()).observe(hv);
+
+/* ---------- reveal ---------- */
+const rio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rv').forEach(el=>rio.observe(el));
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
